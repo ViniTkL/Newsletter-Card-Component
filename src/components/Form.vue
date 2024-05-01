@@ -17,8 +17,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 600px;
-        height: 600px;
-        background-color: red;
+        width: 800px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: #CDCDCD;
     }
 </style>

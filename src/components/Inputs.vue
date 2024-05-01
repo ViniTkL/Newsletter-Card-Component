@@ -3,19 +3,31 @@
 
 <template>
     <div class="inputs-container">
-        <input class="email-input" type="email" placeholder="Enter your email adress">
-        <button class="Subscribe-btn">Subscribe</button>
-        <input type="checkbox" id="terms">
-        <label for="terms">adsadaasdasd</label>
+        <div class="email-subscription">
+            <input class="email-input" type="email" placeholder="Enter your email adress">
+            <button class="Subscribe-btn">Subscribe</button>
+        </div>
+        <div class="email-tems">
+            <input type="checkbox" id="terms">
+            <label for="terms">adsadaasdasd</label>
+        </div>
     </div>
 </template>
 
 <style scoped>
     .inputs-container{
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+
+    .email-subscription{
+        display: flex;
+        justify-content: center;
+        width: 100%;
         gap: 10px;
     }
     .email-input{
@@ -33,5 +45,10 @@
         background-color: black;
         border-radius: 4px;
         border: none;
+    }
+
+    .email-tems{
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
